@@ -116,3 +116,40 @@ footer {
   letter-spacing: 0.5px;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #000;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
+
+
